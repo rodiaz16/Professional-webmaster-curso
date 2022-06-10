@@ -4,3 +4,5 @@
 - Galletitas
 - Fruta
 - Verdura
+- Palta
+- Lechugas
