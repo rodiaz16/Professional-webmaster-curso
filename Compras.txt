@@ -1,0 +1,6 @@
+- Pan
+- Gelatina 
+- Leche
+- Galletitas
+- Fruta
+- Verdura
