@@ -1,0 +1,24 @@
+p{color:blue}
+.destacados{font-size: 20px;
+font-weight: bold;
+font-style: italic;}
+#rojo{
+    width: 200px;
+    height: 400px;
+    background-color: rgb(184, 104, 104);
+    margin-bottom: 20px;
+    margin-left: 50px;
+    padding: 20px;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+#azul{
+    width: 50%;
+    height: 400px;
+    background-color: rgb(152, 152, 190);
+    margin-bottom: 20px;
+    margin-left: 50px;
+    padding: 20px;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
