@@ -1,0 +1,85 @@
+/* FUENTE h2 font-family: 'Azeret Mono', monospace;
+FUNETE h1 font-family: 'Roboto Mono', monospace;*/
+h1{font-family: 'Roboto Mono', monospace;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 80px;}
+h2{font-family: 'Azeret Mono', monospace;}
+p{color:rgb(0, 0, 0);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+.destacados
+{font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    font-weight: bold;}
+.destacados01
+{font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: bold;
+font-style: italic;}
+.destacados02
+{font-family: 'Azeret Mono', monospace;
+    font-size: 15px;
+    font-weight: bold;
+font-style: italic;}
+#rojo{
+        width: 200px;
+        height: 150px;
+        background-color: rgb(184, 104, 104);
+        margin-bottom: 20px;
+        margin-left: 50px;
+        padding: 20px;
+        border: 2px solid chocolate;
+        box-sizing: border-box;
+    }
+#azul{
+        width: 25%;
+        height: 250px;
+        background-color: rgb(152, 152, 190);
+        margin-bottom: 20px;
+        margin-left: 50px;
+        padding: 20px;
+        border: 2px solid blueviolet;
+        box-sizing: border-box;
+    }
+#verde{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: larger;
+        width: 25%;
+        height: 40px;
+        background-color: rgb(152, 190, 184);
+        margin-bottom: 20px;
+        margin-left: 50px;
+        padding: 20px;
+      
+    }
+.caja{
+        width: 300px;
+        height: 300px;
+        /*background-color: yellow;*/
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+        box-sizing: border-box;
+        color: whitesmoke;
+        /* Eje x - Eje y - Desenfoque - Color */
+        border-radius: 0px 103px 103px 103px;
+        -webkit-border-radius: 0px 103px 103px 103px;
+        -moz-border-radius: 0px 103px 103px 103px;
+        border: 7px dashed #c39e9b;
+        
+        /*https://cssgenerator.org/border-radius-css-generator.html*/
+    }
+.caja1{
+        width: 150px;
+        height: 110px;
+        padding: 20px;
+        border-radius: 0px 103px 103px 103px;
+        -webkit-border-radius: 0px 103px 103px 103px;
+        -moz-border-radius: 0px 103px 103px 103px;
+        background: #ffffff;
+        border: 7px dashed rgba(79,240,127,0.42);
+}
+.icono01{font-size: 40px;}
+.icono02{font-size: 40px;}
+.icono03{font-size: 40px;}

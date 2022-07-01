@@ -1,0 +1,44 @@
+/* font-family: 'League Gothic', sans-serif;*/
+/*font-family: 'The Nautigal', cursive;*/
+.caja{
+    width: 300px;
+    height: 300px;
+    /*background-color: yellow;*/
+    padding: 20px;
+    background: #da7a7a;
+    background: linear-gradient(41deg,#da7a7a 0%, #4af64a 80%);
+    background: -webkit-linear-gradient(41deg,#da7a7a 0%, #4af64a 80%);
+    background: -moz-linear-gradient(41deg,#da7a7a 0%, #4af64a 80%);
+    box-sizing: border-box;
+    color: whitesmoke;
+    /*Sombra*/
+    box-shadow: 10px 20px 5px red;
+    /* Eje x - Eje y - Desenfoque - Color */
+    border-radius: 187px 187px 187px 0px;
+    -webkit-border-radius: 187px 187px 187px 0px;
+    -moz-border-radius: 187px 187px 187px 0px;
+    border: 26px dashed #ff6550;
+    
+    /*https://cssgenerator.org/border-radius-css-generator.html*/
+}
+.texto{
+    column-count: 3; /*Cantidad de columnas*/
+    column-gap: 20px; /*Espacio entre columnas*/
+    column-rule: 10px dashed #4af64a; /*Agregar línea entre columnas*/
+    font-family: 'League Gothic', sans-serif;
+    font-size: 25px;
+
+}
+h1{font-family: 'League Gothic', sans-serif;
+font-size: 70px;}
+h2{font-family: 'The Nautigal', cursive;
+font-size: 50px;}
+.icono
+{font-size: 50px;
+color: #ff6550;}
+.icono2
+{font-size: 50px;
+color: #4af64a;}
+.icono3
+{font-size:xx-large;
+color: black;}
