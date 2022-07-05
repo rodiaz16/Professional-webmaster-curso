@@ -1,0 +1,33 @@
+div {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  cursor: pointer;
+}
+
+div:hover {
+  background-color: #0b441c;
+}
+
+/* :first-child y :last-child */
+/* :nth-child()  */
+
+span {
+  background-color: yellow;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+
+span::after {
+  content: '♡';
+  color: white;
+  font-size: 20px;
+  background-color:black;
+}
+
+span::before {
+  content: 'antes';
+  color: white;
+  background-color: black;
+}

@@ -1,0 +1,40 @@
+.contenedor{
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse; /*Orden inverso de los items*/
+    border: 2px solid black;
+    margin: 0 auto;
+	width: 300px;
+	height: 300px;
+    align-items: center;
+    }
+ .item01{
+	background-color: rgb(209, 22, 22);
+	width: 100px;
+	height: 100px;
+	margin: 0px;
+	font-size: 15px;
+    text-align: center;
+    color: white;
+    line-height: 100px; /*Centrar verticalmente linea de texto*/
+    }
+.item02{
+	background-color: rgb(41, 22, 209);
+	width: 100px;
+	height: 100px;
+	margin: 0px;
+	font-size: 15px;
+    text-align: center;
+    color: white;
+    line-height: 100px;
+}
+.item03{
+	background-color: rgb(44, 209, 22);
+	width: 100px;
+	height: 100px;
+	margin: 0px;
+	font-size: 15px;
+    text-align: center;
+    color: white;
+    line-height: 100px;
+}
