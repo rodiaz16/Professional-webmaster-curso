@@ -1,0 +1,51 @@
+<main class="holder">
+    <img src="images/contactos.jpg" alt="contactos">
+</main>
+<p></p>
+<main class="holder contacto">
+    <div>
+        <h2 class="comentario">Envianos tu mensaje</h2>
+        <p></p>
+        <form action="/contactos" method="post" class="formulario">
+            <p>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre">
+            </p>
+            <p>
+                <label for="telefono">Telefono</label>
+                <input type="text" name="tel">
+            </p>
+            <p>
+                <label for="email">E-mail</label>
+                <input type="text" name="email">
+            </p>
+
+            <p>
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar" />
+            </p>
+
+        </form>
+        <p class="comentario">{{message}}</p>
+    </div>
+    <div class="datos">
+        <p></p>
+        <h2>Contactanos a través de los siguientes medios:</h2>
+        <ul>
+            <li>Teléfono: xxx xxxxxx</li>
+            <li>Email: contacto@laincognita.com.ar</li>
+            <li>Facebook: xxxxxxxxxxxxxxxxxx</li>
+            <li>Twitter: @xxxxxxxxxxxxx</li>
+            <li>Skipe: </li>
+        </ul>
+
+    </div>
+    <p></p>
+</main>
+<footer class="holder">
+    <p>
+        Diseñado por Raúl Diaz - &copy;2022
+    </p>
