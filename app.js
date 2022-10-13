@@ -3,7 +3,10 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var session = require('express-session');
+
+require('dotenv').config();
+
+var pool = require('./modelos/bd');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -20,37 +23,44 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(session({
-  secret: 'keyboard cat',
-  resave: false,
-  saveUninitialized: true,
-}));
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
 
-app.get('/', function (req, res) {
-  var conocido = Boolean(req.session.nombre);
+//Diferentes consultas a la base de datos empleados
+//pool.query("select * from empleados").then(function (resultados) { console.log(resultados) });
 
-  res.render('index', {
-    title: 'Sesiones en Express.js',
-    conocido: conocido,
-    nombre: req.session.nombre
+//Insertar registro en la base de datos empleado
+//var obj = {
+//  nombre: 'Gustavo',
+//  apellido: 'Roldan',
+//  trabajo: 'Administrativo',
+//  edad: 45,
+//  salario: 11007,
+//  mail: 'gustavoroldan123@gmail.com'
+//}
 
-  });
+//pool.query('insert into empleados set ?', [obj]).then
+//  (function (resultados) {
+//    console.log(resultados)
+//  });
+
+//UPDATE. Actualización y modificación de datos en la base "empleados"
+//var id = 24;
+//var obj = {
+//  nombre: 'Pablo',
+//  apellido: 'Gomez'
+//}
+
+//pool.query('update empleados set ? where id_emp=?', [obj, id]).then(function(resultados)
+//{console.log(resultados)
+//});
+
+//Borrar registro
+var id = 27;
+var id = 28;
+pool.query('delete from empleados where id_emp=?', [id]).then(function (resultados) {
+  console.log(resultados);
 });
-
-app.post('/ingresar', function (req, res) {
-  if (req.body.nombre) {
-    req.session.nombre = req.body.nombre
-  }
-  res.redirect('/');
-});
-
-app.get('/salir', function (req, res) {
-  req.session.destroy();
-  res.redirect('/');
-});
-
-//app.use('/', indexRouter);
-//app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
