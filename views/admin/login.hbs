@@ -1,0 +1,15 @@
+<form action="/admin/login" method="post">
+    <div class="mb-3">
+        <input type="text" class="form-control" id="inputUser" placeholder="Ingresar nombre de usuario" name="usuario">
+    </div>
+    <div class="mb-3">
+        <input type="password" class="form-control" id="inputPassword" placeholder="Ingresar contraseña"
+            name="password">
+    </div>
+    <button type="submit" class="btn btn-secondary"> Ingresar
+
+    </button>
+    {{#if error}}
+    <p>El usuario o contraseña son incorrectos</p>
+    {{/if}}
+</form>
